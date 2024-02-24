@@ -17,10 +17,15 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-	        <!-- Replace spring-boot-starter-webflux with spring-boot-starter-web for Spring MVC -->
+	        <!--I have spring-boot-starter-webflux and spring-boot-starter-web for Spring MVC -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
 		<dependency>
