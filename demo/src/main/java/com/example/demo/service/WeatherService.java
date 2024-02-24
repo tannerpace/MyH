@@ -21,7 +21,8 @@ public class WeatherService {
 
 
     public Mono<String> getWeather(double lat, double lon) {
-        String path = String.format("/points/%f,%f", lat, lon);
+      
+        String path = String.format("/points/%.4f,%.4f", lat, lon);
         return this.webClient.get().uri(uriBuilder -> uriBuilder.path(path).build())
                 .retrieve()
                 .bodyToMono(String.class) // Change String.class to your weather response class
